@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mystic Nepal - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Mystic Nepal</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="planner.html">Trip Planner</a></li>
+            <li><a href="favorites.html">Favorites (<span id="fav-badge">0</span>)</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="nav-auth"></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <h1>Discover Nepal's Hidden Destinations</h1>
+            <p>Explore lesser-known attractions, estimate your travel budget, and plan your authentic nepali journeys.</p>
+            <a href="destinations.html" class="btn">Explore Now</a>
+        </header>
+
+        <h2>Featured Hidden Gems</h2>
+        <div id="destinations-container" class="grid" style="margin-top: 1rem;"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mystic Nepal. All rights reserved.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/destinations.js"></script>
+</body>
+</html>

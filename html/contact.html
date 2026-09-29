@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mystic Nepal - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Mystic Nepal</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="planner.html">Trip Planner</a></li>
+            <li><a href="favorites.html">Favorites (<span id="fav-badge">0</span>)</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li id="nav-auth"></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div style="background: white; padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color); max-width: 600px; margin: 0 auto;">
+            <h2>Contact & Feedback</h2>
+            <form onsubmit="handleContactSubmit(event)" style="margin-top: 1rem;">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="contact-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="contact-email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Message / Suggestion</label>
+                    <textarea id="contact-message" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Submit Inquiry</button>
+            </form>
+            <p id="contact-response" style="margin-top: 1rem; color: #15803d; font-weight: bold;"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mystic Nepal. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
