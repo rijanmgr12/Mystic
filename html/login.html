@@ -1,47 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mystic Nepal - Login</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Mystic Nepal</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="planner.html">Trip Planner</a></li>
-            <li><a href="favorites.html">Favorites (<span id="fav-badge">0</span>)</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li id="nav-auth"></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <div style="background: white; padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color); max-width: 400px; margin: 2rem auto;">
-            <h2>User Login</h2>
-            <form onsubmit="loginUser(event)" style="margin-top: 1rem;">
-                <div class="form-group">
-                    <label>Username</label>
-                    <input type="text" id="login-username" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" id="login-password" class="form-control" required>
-                </div>
-                <button type="submit" class="btn" style="width: 100%;">Login</button>
-            </form>
-            <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem;">Don't have an account? <a href="register.html">Register here</a></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Mystic Nepal</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="nav"></header>
+    <main class="auth">
+      <div>
+        <h1>Your Next Adventure Awaits</h1>
+        <p>
+          Sign in to plan your trips, save destinations and explore Nepal like
+          never before.
+        </p>
+      </div>
+      <div class="form-box" style="margin: 0">
+        <div class="tabs">
+          <a class="on" href="login.html">Login</a
+          ><a class="" href="register.html">Sign Up</a>
         </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Mystic Nepal. All rights reserved.</p>
-    </footer>
-
+        <div id="msg" class="msg"></div>
+        <form id="loginForm" novalidate>
+          <div class="field">
+            <label for="email">Email address</label
+            ><input id="email" type="email" autocomplete="email" />
+            <div class="err"></div>
+          </div>
+          <div class="field">
+            <label for="password">Password</label
+            ><input
+              id="password"
+              type="password"
+              autocomplete="current-password"
+            />
+            <div class="err"></div>
+          </div>
+          <button class="btn" type="submit" style="width: 100%">Login</button>
+        </form>
+        <p class="hint">Demo account: demo@mystic.com / Mystic123</p>
+      </div>
+    </main>
+    <div id="foot"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
     <script src="js/auth.js"></script>
-</body>
+  </body>
 </html>

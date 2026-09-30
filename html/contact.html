@@ -1,51 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mystic Nepal - Contact</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Mystic Nepal</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="planner.html">Trip Planner</a></li>
-            <li><a href="favorites.html">Favorites (<span id="fav-badge">0</span>)</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-            <li id="nav-auth"></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <div style="background: white; padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color); max-width: 600px; margin: 0 auto;">
-            <h2>Contact & Feedback</h2>
-            <form onsubmit="handleContactSubmit(event)" style="margin-top: 1rem;">
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" id="contact-name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" id="contact-email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label>Message / Suggestion</label>
-                    <textarea id="contact-message" class="form-control" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn" style="width: 100%;">Submit Inquiry</button>
-            </form>
-            <p id="contact-response" style="margin-top: 1rem; color: #15803d; font-weight: bold;"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Mystic Nepal</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="nav"></header>
+    <section
+      class="banner"
+      style="background-image: url(&quot;images/banner-contact.jpg&quot;)"
+    >
+      <div>
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you!</p>
+      </div>
+    </section>
+    <main class="wrap">
+      <div class="cgrid">
+        <div class="icard">
+          <h3>Contact Information</h3>
+          <div class="crow">
+            <b>Address</b
+            ><span
+              >Mystic Nepal, Butwal-10, Rupandehi, Lumbini Province, Nepal</span
+            >
+          </div>
+          <div class="crow"><b>Phone</b><span>+977-9800000000</span></div>
+          <div class="crow"><b>Email</b><span>mysticnepal@gmail.com</span></div>
         </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Mystic Nepal. All rights reserved.</p>
-    </footer>
-
+        <div class="form-box" style="margin: 0; max-width: none">
+          <h2>Send Us a Message</h2>
+          <div id="msg" class="msg"></div>
+          <form id="contactForm" novalidate>
+            <div class="field">
+              <label for="cname">Name</label
+              ><input id="cname" type="text" placeholder="Enter your name" />
+              <div class="err"></div>
+            </div>
+            <div class="field">
+              <label for="cemail">Email</label
+              ><input id="cemail" type="email" placeholder="Enter your email" />
+              <div class="err"></div>
+            </div>
+            <div class="field">
+              <label for="cmessage">Message</label
+              ><textarea
+                id="cmessage"
+                rows="5"
+                placeholder="Type your message"
+              ></textarea>
+              <div class="err"></div>
+            </div>
+            <button class="btn" type="submit" style="width: 100%">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div id="foot"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/contact.js"></script>
-</body>
+    <script src="js/auth.js"></script>
+  </body>
 </html>

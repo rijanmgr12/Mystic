@@ -1,37 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mystic Nepal - About Us</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Mystic Nepal</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="planner.html">Trip Planner</a></li>
-            <li><a href="favorites.html">Favorites (<span id="fav-badge">0</span>)</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li id="nav-auth"></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <div style="background: white; padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color);">
-            <h2>About Mystic Nepal</h2>
-            <p style="margin-top: 1rem; line-height: 1.6;">
-                Mystic Nepal is a client-side tourism platform created to promote lesser-known destinations across Nepal. By decentralizing tourism from typical spots like Kathmandu and Pokhara, we encourage sustainable regional travel and local eco-tourism.
-            </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Mystic Nepal</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="nav"></header>
+    <section
+      class="banner"
+      style="background-image: url(&quot;images/banner-about.jpg&quot;)"
+    >
+      <div>
+        <h1>About Us</h1>
+        <p>We are passionate about Nepal and its unmatched beauty.</p>
+      </div>
+    </section>
+    <main class="wrap">
+      <div class="about">
+        <div>
+          <h2>Our Story</h2>
+          <p>
+            Most travel websites promote the same few places: Kathmandu,
+            Pokhara, Chitwan and the Everest region. Many beautiful and
+            culturally rich destinations get little attention online, and
+            travellers have to search across many sites to plan a trip.
+          </p>
+          <br />
+          <p>
+            Mystic Nepal brings hidden and popular destinations together in one
+            place. You can search and filter locations, read practical tips, and
+            estimate your travel budget in a few clicks.
+          </p>
         </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Mystic Nepal. All rights reserved.</p>
-    </footer>
-
+        <div class="pic aboutpic">
+          <img
+            src="images/about.jpg"
+            alt="Nepal prayer flags and mountains"
+            onerror="this.style.display = 'none'"
+          />
+        </div>
+      </div>
+      <div class="cards3">
+        <div class="icard">
+          <h3>Our Mission</h3>
+          <p>
+            Promote lesser-known destinations and support sustainable tourism in
+            Nepal.
+          </p>
+        </div>
+        <div class="icard">
+          <h3>Our Vision</h3>
+          <p>
+            Make Nepal a top destination for travellers who want authentic,
+            responsible experiences.
+          </p>
+        </div>
+        <div class="icard">
+          <h3>Our Values</h3>
+          <p>Authenticity, sustainability, responsibility and community.</p>
+        </div>
+      </div>
+    </main>
+    <div id="foot"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

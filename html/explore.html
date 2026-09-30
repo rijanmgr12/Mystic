@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations | Mystic Nepal</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="nav"></header>
+    <section
+      class="banner"
+      style="background-image: url(&quot;images/banner-destinations.jpg&quot;)"
+    >
+      <div>
+        <h1>Our Destinations</h1>
+        <p>Explore the hidden gems and popular spots of Nepal.</p>
+      </div>
+    </section>
+    <main class="wrap">
+      <div class="explore">
+        <aside class="side">
+          <h3>Filter By</h3>
+          <label for="province">Province</label
+          ><select id="province">
+            <option value="all">All provinces</option>
+            <option>Koshi</option>
+            <option>Madhesh</option>
+            <option>Bagmati</option>
+            <option>Gandaki</option>
+            <option>Lumbini</option>
+            <option>Karnali</option>
+            <option>Sudurpashchim</option>
+          </select>
+          <label for="category" style="margin-top: 14px">Category</label
+          ><select id="category">
+            <option value="all">All categories</option>
+          </select>
+          <label for="type" style="margin-top: 14px">Type</label
+          ><select id="type">
+            <option value="all">Hidden and popular</option>
+            <option value="hidden">Hidden gems only</option>
+            <option value="famous">Popular only</option>
+          </select>
+          <button class="btn small dark" id="reset" style="margin-top: 18px">
+            Clear filters
+          </button>
+        </aside>
+        <section>
+          <input
+            id="search"
+            type="search"
+            placeholder="Search destination name"
+            aria-label="Search"
+          />
+          <p id="count" style="margin: 12px 0 16px"></p>
+          <div class="grid" id="results"></div>
+        </section>
+      </div>
+    </main>
+    <div id="foot"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/explore.js"></script>
+  </body>
+</html>

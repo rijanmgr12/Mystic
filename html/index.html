@@ -1,41 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mystic Nepal - Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Mystic Nepal</a>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="planner.html">Trip Planner</a></li>
-            <li><a href="favorites.html">Favorites (<span id="fav-badge">0</span>)</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li id="nav-auth"></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <header class="hero">
-            <h1>Discover Nepal's Hidden Destinations</h1>
-            <p>Explore lesser-known attractions, estimate your travel budget, and plan your authentic nepali journeys.</p>
-            <a href="destinations.html" class="btn">Explore Now</a>
-        </header>
-
-        <h2>Featured Hidden Gems</h2>
-        <div id="destinations-container" class="grid" style="margin-top: 1rem;"></div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Mystic Nepal. All rights reserved.</p>
-    </footer>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Mystic Nepal</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="nav"></header>
+    <section class="hero">
+      <img
+        class="hero-img"
+        src="images/hero.jpg"
+        alt="Nepal mountains"
+        onerror="
+          this.style.display = 'none';
+          this.parentNode.classList.add('noimg');
+        "
+      />
+      <div class="in">
+        <p class="eyebrow">WELCOME TO NEPAL</p>
+        <h1>Discover the Beauty of <span>Nepal</span></h1>
+        <p class="sub">
+          From hidden lakes to sacred valleys, find the places most travellers
+          never hear about and plan your trip in minutes.
+        </p>
+        <form class="searchbar" id="heroSearch">
+          <label class="sf"
+            ><svg
+              class="si"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#0b2a55"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-4-4" />
+            </svg>
+            <div>
+              <span>Destination</span
+              ><input
+                id="hq"
+                type="text"
+                placeholder="Where do you want to go?"
+              /></div
+          ></label>
+          <label class="sf"
+            ><svg
+              class="si"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#0b2a55"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.800 12 21 12 21z"
+              />
+              <circle cx="12" cy="9.500" r="2.500" />
+            </svg>
+            <div>
+              <span>Province</span
+              ><select id="hp">
+                <option value="all">Any province</option>
+              </select>
+            </div></label
+          >
+          <label class="sf"
+            ><svg
+              class="si"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#0b2a55"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 12V4h8l10 10-8 8z" />
+              <circle cx="7.500" cy="8.500" r="1" />
+            </svg>
+            <div>
+              <span>Type</span
+              ><select id="ht">
+                <option value="all">Hidden and popular</option>
+                <option value="hidden">Hidden gems</option>
+                <option value="famous">Popular</option>
+              </select>
+            </div></label
+          >
+          <button class="btn" type="submit">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2.200"
+              stroke-linecap="round"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-4-4" /></svg
+            >Search
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="features">
+      <div class="row">
+        <div class="feat">
+          <i style="background: #2563eb1a"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#2563eb"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            >
+              <path d="M2 20 9 8l4 7 3-4 6 9z" /></svg
+          ></i>
+          <div>
+            <b>Stunning Landscapes</b><small>From mountains to lakes</small>
+          </div>
+        </div>
+        <div class="feat">
+          <i style="background: #6d5ef01a"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#6d5ef0"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 3 4 8h16zM6 8v10M10 8v10M14 8v10M18 8v10M3 20h18"
+              /></svg
+          ></i>
+          <div>
+            <b>Rich Culture</b><small>Ancient heritage and traditions</small>
+          </div>
+        </div>
+        <div class="feat">
+          <i style="background: #16a34a1a"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#16a34a"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z" />
+              <path d="m9 12 2 2 4-4" /></svg
+          ></i>
+          <div><b>Hidden Gems</b><small>Places few travellers know</small></div>
+        </div>
+        <div class="feat">
+          <i style="background: #f59e0b1a"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#f59e0b"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            >
+              <path d="M5 19C5 9 11 5 19 5c0 8-4 14-14 14zM5 19 12 12" /></svg
+          ></i>
+          <div><b>Sustainable Tourism</b><small>Travel responsibly</small></div>
+        </div>
+      </div>
+    </section>
+    <main class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow dark">POPULAR DESTINATIONS</p>
+          <h2>Explore Our Top Destinations</h2>
+        </div>
+        <a class="more" href="explore.html">View All Destinations &rarr;</a>
+      </div>
+      <div class="grid" id="featured"></div>
+    </main>
+    <div id="foot"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/destinations.js"></script>
-</body>
+  </body>
 </html>
